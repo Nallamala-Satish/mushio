@@ -184,7 +184,7 @@ useEffect(()=>{
                   /> 
                      <TextInput
                    value={dob}
-                   placeholder={' Dob'}
+                   placeholder={'MM-DD-YYYY'}
                     placeholderTextColor={'black'}
                     style={{padding:5,backgroundColor:'white',width:'70%',alignSelf:'center',margin:10,fontSize:15,fontWeight:'bold',color:theme === 'dark' ?'black':'',
                     borderRadius:10,borderColor:'blue',borderWidth:1}}    

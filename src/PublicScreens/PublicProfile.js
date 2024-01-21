@@ -161,14 +161,14 @@ const [profileimg,setProfileImg]=useState(require('../assets/images/image3.jpg')
       </View>
       <Text style={{color:theme === 'dark' ?'white':'black',marginTop:25,fontSize:30,marginRight:20,fontFamily:'Montserrat-Bold'}}>{Name}</Text>
           <View style={{marginTop:Metrics.rfv(10)}}>
-          <Switch
+          {/* <Switch
               style={{
                 transform: [{ scaleX: 1.3 }, { scaleY: 1.3 }],alignSelf:'flex-end',marginRight:10
               }}
-              color='#00B0FF'
+              color={theme === 'dark' ? 'white':'black'}
               value={!isSwitchOn}
               onValueChange={onToggleSwitch}
-            />
+            /> */}
                <Entypo
                   name="menu"
                    size={40}

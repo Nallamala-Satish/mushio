@@ -13,9 +13,11 @@ import { PUBLIC_MAIN_ROUTE } from '../routes/PublicRouteConts'
 import { setusertype } from '../Redux/reducer/userType'
 import LinearGradient from 'react-native-linear-gradient'
 import Loader from '../Components/Loader'
+import { useColorScheme } from 'react-native'
 
 const Profile = () => {
   const [isSwitchOn, setIsSwitchOn] = useState(false);
+  const theme = useColorScheme();
   const [userInfo,setUserInfo]=useState({})
   const [loading,setLoading]=useState(false)
   const[scoreRes,setScoreRes]=useState({})
@@ -93,7 +95,7 @@ const Profile = () => {
               style={{
                transform: [{ scaleX: 1.5 }, { scaleY: 1.3 }],alignSelf:'flex-end',marginRight:10,marginTop:10
               }}
-              color='#00B0FF'
+              color={theme === 'dark' ? 'white':'black'}
               value={isSwitchOn}
               onValueChange={onToggleSwitch}
             />

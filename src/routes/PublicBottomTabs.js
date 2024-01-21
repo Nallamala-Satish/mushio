@@ -6,7 +6,7 @@ import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import AntDesign from 'react-native-vector-icons/AntDesign';
 import Feather from 'react-native-vector-icons/Feather';
-import Octicons from 'react-native-vector-icons/Octicons';
+import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
 import Metrics from '../Constants/Metrics';
 import { Categories, Home,  Profile, Graphs } from '../Screens';
 import { HOME, GRAPHS } from './RouteConst';
@@ -201,8 +201,8 @@ const theme = useColorScheme()
                       justifyContent: 'center',
                       alignItems: 'center',
                     }}>
-                    <MaterialIcons
-                      name="headset-mic"
+                    <FontAwesome5
+                      name="theater-masks"
                       style={[
                         { fontSize: Metrics.rfv(25), color: 'white',backgroundColor:'black',borderRadius: 44,padding:5},
                         focused && { fontSize: Metrics.rfv(25), color: 'white' },
